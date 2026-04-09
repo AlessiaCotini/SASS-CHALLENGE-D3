@@ -1,0 +1,8 @@
+
+@mixin centerdisplay {
+    display: flex;
+}
+@mixin borderradius {
+    border: 1px solid rgba(255, 255, 255, 0.67);
+    border-radius: 0.5em;
+}

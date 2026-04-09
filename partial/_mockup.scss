@@ -1,0 +1,85 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    @include centerdisplay;
+    align-items:center;
+    flex-direction: column;
+}
+nav{
+    background-color: $bgviolet;
+    padding: $padding;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    h4{padding:$padding 0;}
+    li{color: $textwhite;}
+}
+ul{
+    display: flex;
+    flex-direction: wrap;
+    align-content: flex-start;
+li{
+    list-style: none;
+    padding:$paddingbutton;
+}}
+#firstPartOfMain,#imgDiv {
+   @include centerdisplay;
+}
+#textDiv{
+   @include centerdisplay;
+   flex-direction: column;
+   justify-content: flex-start;
+   width: 50%;
+   gap: 0.5em;
+   .first{background-color: $primobottone;}
+   .second{background-color: $secondobottone;}
+   .third{background-color: $terzobottone;}
+   p{color: $textwhite;}
+   padding: $padding;
+}
+#firstPartOfMain{
+    width: 65%;
+    @include centerdisplay;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    height: 250px;
+    img{   
+         position: absolute;
+         top: 0;
+          }
+    .img{width: 50%;}  
+        
+        }
+main{
+    width: 100%;
+    h1{
+        font-size: 3em;
+    }
+    li{
+      @include borderradius ;
+      margin: $margin;
+    }
+    background-color: $bgviolet;
+    #imgDiv{
+        background-color: $textwhite;
+        @include centerdisplay;
+        justify-content: center;
+    }
+}
+img{
+      @include borderradius;
+       margin: $margin;
+       max-width: 100%;
+       height: auto;
+       
+}
+#whiteDiv{
+    height: 120px;
+    background-color: $textwhite;
+
+}
+#secondMain{
+    width: 100%;
+}
